@@ -21,7 +21,7 @@ class Auto {
     }
     
     func cambioDeVelocidad( ) -> ( actual : Int, velocidadEnCadena: String) {
-        var velText = "Apagado"
+        var velText = "Velocidad Apagado"
         switch (velocidad) {
         case Velocidades.Apagado:
             velocidad = Velocidades.VelocidadBaja
@@ -42,16 +42,6 @@ class Auto {
 }
 
 var auto = Auto()
-auto.velocidad
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
-auto.cambioDeVelocidad()
 
 for _ in 1...20 {
     auto.cambioDeVelocidad()
