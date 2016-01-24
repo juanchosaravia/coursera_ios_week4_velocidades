@@ -2,6 +2,9 @@
 
 import UIKit
 
+//: Playground - noun: a place where people can play
+
+
 enum Velocidades : Int {
     case Apagado = 0
     case VelocidadBaja = 20
@@ -25,16 +28,16 @@ class Auto {
         switch (velocidad) {
         case Velocidades.Apagado:
             velocidad = Velocidades.VelocidadBaja
-            velText = "Velocidad Baja"
+            velText = "Velocidad Apagado"
         case Velocidades.VelocidadBaja:
             velocidad = Velocidades.VelocidadMedia
-            velText = "Velocidad Media"
+            velText = "Velocidad Baja"
         case Velocidades.VelocidadMedia:
             velocidad = Velocidades.VelocidadAlta
-            velText = "Velocidad Alta"
+            velText = "Velocidad Media"
         case Velocidades.VelocidadAlta:
             velocidad = Velocidades.VelocidadMedia
-            velText = "Velocidad Media"
+            velText = "Velocidad Alta"
         }
         
         return (velocidad.rawValue, "\(velText)")
